@@ -1,21 +1,83 @@
-:root{
-    /* Variable declaration */
-    /* COLORS */
-    --pink-100:#EE24FF;
-    --black-100:#3F3D56;
-    --gray-100:#ECEFF2;
-    --gray-200:#828282;
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    /* 
+  /* COLORS */
+  --pink-100: #ee24ff;
+  --black-100: #3f3d56;
+  --gray-100: #eceff2;
+  --gray-200: #828282;
+
+  /* 
     FONT SIZE NAME IN PX, VALUE IN REM
     16 * 0.625 = 10px
     */
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-    --font-32:3.2rem;
-    --font-15:1.5rem;
+  --font-32: 3.2rem;
+  --font-15: 1.5rem;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+main {
+  margin: 6.4rem auto;
+  text-align: center;
+  max-width: 62.6rem;
+}
+
+h1 {
+  color: var(--black-100);
+  font-size: var(--font-32);
+  font-weight: 400;
+}
+
+h1 span {
+  color: var(--pink-100);
+  font-weight: 700;
+}
+
+p {
+  color: var(--gray-200);
+  font-size: var(--font-15);
+}
+
+p strong {
+  color: var(--black-100);
+}
+
+p span {
+  font-weight: 700;
+}
+
+p + p {
+  margin-top: 3.2rem;
+}
+
+nav {
+  border-top: 1px solid var(--gray-100);
+
+  display: flex;
+  gap: 4.2rem;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 39rem;
+  margin: 6.4rem auto;
+}
+
+nav a {
+  color: var(--black-100);
+  font-weight: 700;
+  margin-top: 1.6rem;
+  text-decoration: none;
+}
+
+.wave {
+  width: 100%;
 }
